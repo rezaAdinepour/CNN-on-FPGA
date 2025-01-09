@@ -43,8 +43,6 @@ cnn-fpga-vitis-hls/
 │   ├── gen_data.ipynb      
 │   ├── train.ipynb         
 │   └── utils.py            
-├── README.md               # This file
-├── LICENSE                 # License information
 └── Makefile                # Makefile for automation (if applicable)
 ```
 
