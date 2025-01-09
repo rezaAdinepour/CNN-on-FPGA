@@ -22,5 +22,5 @@ Make sure you have the following tools installed on your system:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/cnn-fpga-vitis-hls.git
-cd cnn-fpga-vitis-hls
+git clone https://github.com/rezaAdinepour/CNN-on-FPGA.git
+cd CNN-on-FPGA
