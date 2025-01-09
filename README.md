@@ -24,7 +24,7 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/rezaAdinepour/CNN-on-FPGA.git
 cd CNN-on-FPGA
-
+```
 
 ## Project Structure
 
