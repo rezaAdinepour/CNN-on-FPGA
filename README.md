@@ -61,3 +61,21 @@ cnn-fpga-vitis-hls/
    - Specify the top-level function for synthesis.
 5. Configure synthesis settings:
    - Optimize for latency, throughput, or area based on your requirements.
+  
+
+## Building the Project
+
+After setting up the project:
+
+1. Run **C Simulation** to verify the functionality of the design.
+2. Perform **Synthesis** to generate the RTL design.
+3. Use **C/RTL Co-Simulation** to validate the synthesized RTL against the C model.
+4. Export the IP core or generate the bitstream for deployment on FPGA.
+
+## Additional Notes
+
+- Modify the `HW/src/` files to customize the CNN hardware implementation.
+- Use the provided Python scripts in the `SW/` folder for training the model and generating data.
+- You can find the trained model in the `Model/` folder.
+- Refer to the Vitis HLS documentation for advanced optimization techniques.
+
