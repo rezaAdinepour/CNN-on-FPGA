@@ -43,7 +43,7 @@ cnn-fpga-vitis-hls/
 │   ├── gen_data.ipynb      
 │   ├── train.ipynb         
 │   └── utils.py            
-└── Makefile                # Makefile for automation (if applicable)
+└── Makefile
 ```
 
 ## Creating the Project in Vitis HLS
