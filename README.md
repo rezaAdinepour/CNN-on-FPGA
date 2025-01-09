@@ -47,3 +47,17 @@ cnn-fpga-vitis-hls/
 ├── LICENSE                 # License information
 └── Makefile                # Makefile for automation (if applicable)
 ```
+
+## Creating the Project in Vitis HLS
+
+1. Open **Vitis HLS**.
+2. Create a new project:
+   - **Project Name**: Choose a name for your project.
+   - **Project Directory**: Set the directory where you want the project files to be stored.
+3. Add the source files:
+   - Copy the contents of the `HW/src/` directory into the `src/` directory of your project.
+   - Add the source files to your Vitis HLS project.
+4. Set the top function:
+   - Specify the top-level function for synthesis.
+5. Configure synthesis settings:
+   - Optimize for latency, throughput, or area based on your requirements.
