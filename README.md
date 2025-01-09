@@ -29,7 +29,7 @@ cd CNN-on-FPGA
 ## Project Structure
 
 The repository is organized as follows:
-
+```
 cnn-fpga-vitis-hls/
 ├── HW/                     # Hardware implementation files
 │   └── src/                # Source files for hardware design
@@ -46,3 +46,4 @@ cnn-fpga-vitis-hls/
 ├── README.md               # This file
 ├── LICENSE                 # License information
 └── Makefile                # Makefile for automation (if applicable)
+```
