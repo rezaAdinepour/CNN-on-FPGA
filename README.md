@@ -24,3 +24,25 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/rezaAdinepour/CNN-on-FPGA.git
 cd CNN-on-FPGA
+
+
+## Project Structure
+
+The repository is organized as follows:
+
+cnn-fpga-vitis-hls/
+├── HW/                     # Hardware implementation files
+│   └── src/                # Source files for hardware design
+│       ├── Data/           # Data handling source files
+│       ├── cnn.cpp         # C++ source code for CNN implementation
+│       └── cnn.h           # Header file for CNN functions
+├── SW/                     # Software implementation files
+│   ├── gen_data.ipynb      # Jupyter notebook for data generation
+│   ├── train.ipynb         # Jupyter notebook for training the CNN model
+│   └── utils.py            # Python utilities for handling model data
+├── Data/                   # Directory containing training and test data
+├── Header/                 # Directory containing header files (if any)
+├── Model/                  # Directory for storing the trained CNN model
+├── README.md               # This file
+├── LICENSE                 # License information
+└── Makefile                # Makefile for automation (if applicable)
