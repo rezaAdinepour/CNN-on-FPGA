@@ -1,6 +1,6 @@
 # FPGA-Based Implementation of CNN using High Level Synthesis (HLS)
 
-This repository contains the source files and scripts for implementing a Convolutional Neural Network (CNN) on FPGA using Vitis High-Level Synthesis (HLS). The design leverages HLS to convert high-level C/C++ descriptions into optimized hardware implementations for FPGAs.
+This repository contains the source files and scripts for implementing a Convolutional Neural Network on FPGA using Vitis High-Level Synthesis (HLS). The design leverages HLS to convert high-level C/C++ descriptions into optimized hardware implementations for FPGAs.
 
 ## Features
 
