@@ -212,6 +212,42 @@ In this case, the network has incorrectly identified 5 images as follows:
 
 
 
+
+The values that the network has obtained for each wrong output are also provided below:
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 30%; padding: 10px;">
+    <ol>
+      <li>Row 1</li>
+      <li>Row 2</li>
+      <li>Row 3</li>
+      <li>Row 4</li>
+      <li>Row 5</li>
+    </ol>
+  </div>
+  <div style="width: 30%; padding: 10px;">
+    <ol>
+      <li>Row 6</li>
+      <li>Row 7</li>
+      <li>Row 8</li>
+      <li>Row 9</li>
+      <li>Row 10</li>
+    </ol>
+  </div>
+  <div style="width: 30%; padding: 10px;">
+    <ol>
+      <li>Row 11</li>
+      <li>Row 12</li>
+      <li>Row 13</li>
+      <li>Row 14</li>
+      <li>Row 15</li>
+    </ol>
+  </div>
+</div>
+
+
+
+
 ## Getting Started
 
 ### Prerequisites
