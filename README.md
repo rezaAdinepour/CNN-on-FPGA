@@ -208,7 +208,7 @@ In this case, the network has incorrectly identified 5 images as follows:
 
 | <img src="Doc/Images/wrong_output_predict5.png" width="150" /> | <img src="Doc/Images/wrong_output_predict5_2.png" width="150" /> |
 | ------------------------------------------------------------- | -------------------------------------------------------------- |
-| Wrong prediction for digit 5                                  | Caption for Image 5                                            |
+| Wrong prediction for digit 5                                  | Wrong Caption for Image 5                                      |
 
 
 
