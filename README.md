@@ -166,7 +166,7 @@ void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction[DIGITS])
 ```
 
 
-## Result
+## Synthesis Results
 In the final stage, we synthesize the CNN model. The network synthesis reports are provided as follows:
 
 ![synthesis1](Doc/Images/Synthesis_Result_1.png "synthesis resource1")
@@ -175,7 +175,13 @@ In the final stage, we synthesize the CNN model. The network synthesis reports a
 
 
 
+## Testbench
+In the final stage, a testbench file has been written for the design, which processes 100 initial images from the `in.dat` file generated in the previous phase. These images are then passed to the network for processing. The network output includes the accuracy of number recognition and the time consumed for the entire process.
 
+For example, our model recognizes 100 initial images from the MNIST test dataset with 100% accuracy.
+
+
+![restResult1](Doc/Images/Synthesis_Result_4.png "testbench resault1")
 
 
 
