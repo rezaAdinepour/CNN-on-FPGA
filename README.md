@@ -16,6 +16,21 @@ In the first step, the target network is initially defined in software and train
 
 ![netArch](Doc/Images/net_arch.png "network architecture")
 
+Define model as bellow in `Codes/SW/utils.py`:
+```
+def define_model() -> Sequential:
+   # Define model.
+   model = Sequential()
+   model.add(ZeroPadding2D(padding=pad, input_shape=(input_size[0], input_size[1], 1), name="padding_layer"))
+   model.add(Conv2D(conv_filter_num, conv_kernel_size, activation="relu", padding="valid", kernel_initializer="he_uniform", input_shape=(30, 30, 1), name="convolution_layer"))
+   model.add(MaxPooling2D(pool_size, name="max_pooling_layer"))
+   model.add(Flatten(name="flatten_layer"))
+   model.add(Dense(10, activation="softmax", name="dense_layer"))
+   # Compile model.
+   model.compile(optimizer=Adam(), loss="categorical_crossentropy", metrics=["accuracy"])
+   # Return model.
+   return model
+```
 
 
 ### Inference Phase
