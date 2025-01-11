@@ -204,26 +204,26 @@ In this case, the network has incorrectly identified 5 images as follows:
 
 <div style="display: flex; justify-content: space-between;">
   <div style="text-align: center;">
-    <img src="Doc/Images/wrong_output_predict0.png" alt="Image 1" width="200" />
+    <img src="Doc/Images/wrong_output_predict0.png" alt="Image 1" width="100" />
     <p>Caption for Image 1</p>
   </div>
   <div style="text-align: center;">
-    <img src="Doc/Images/wrong_output_predict2.png" alt="Image 2" width="200" />
+    <img src="Doc/Images/wrong_output_predict2.png" alt="Image 2" width="100" />
     <p>Caption for Image 2</p>
   </div>
   <div style="text-align: center;">
-    <img src="Doc/Images/wrong_output_predict2_2.png" alt="Image 3" width="200" />
+    <img src="Doc/Images/wrong_output_predict2_2.png" alt="Image 3" width="100" />
     <p>Caption for Image 3</p>
   </div>
 </div>
 
 <div style="display: flex; justify-content: space-between; margin-top: 20px;">
   <div style="text-align: center;">
-    <img src="Doc/Images/wrong_output_predict5.png" alt="Image 4" width="200" />
+    <img src="Doc/Images/wrong_output_predict5.png" alt="Image 4" width="100" />
     <p>Caption for Image 4</p>
   </div>
   <div style="text-align: center;">
-    <img src="Doc/Images/wrong_output_predict5_2.png" alt="Image 5" width="200" />
+    <img src="Doc/Images/wrong_output_predict5_2.png" alt="Image 5" width="100" />
     <p>Caption for Image 5</p>
   </div>
 </div>
