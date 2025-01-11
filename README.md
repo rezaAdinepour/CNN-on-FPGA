@@ -8,6 +8,19 @@ This repository contains the source files and scripts for implementing a Convolu
 - Implemented using Vitis HLS for efficient synthesis and optimization.
 - Modular design for easy modification and integration.
 
+
+## Implementation
+
+### Training Phase
+
+
+
+
+
+### Inference Phase
+
+
+
 ## Getting Started
 
 ### Prerequisites
