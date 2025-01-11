@@ -17,7 +17,7 @@ In the first step, the target network is initially defined in software and train
 ![netArch](Doc/Images/net_arch.png "network architecture")
 
 Define model as bellow in `Codes/SW/utils.py`:
-```
+```Python
 def define_model() -> Sequential:
    # Define model.
    model = Sequential()
