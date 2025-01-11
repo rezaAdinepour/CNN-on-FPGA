@@ -169,6 +169,13 @@ void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction[DIGITS])
 ## Result
 In the final stage, we synthesize the CNN model. The network synthesis reports are provided as follows:
 
+![synthesis1](Doc/Images/Synthesis_Result_1.png "synthesis resource1")
+
+![synthesis2](Doc/Images/Synthesis_Result_3.png "synthesis resource2")
+
+
+
+
 
 
 
