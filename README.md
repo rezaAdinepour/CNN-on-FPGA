@@ -204,11 +204,11 @@ In this case, the network has incorrectly identified 5 images as follows:
 
 | <img src="Doc/Images/wrong_output_predict0.png" width="150" /> | <img src="Doc/Images/wrong_output_predict2.png" width="150" /> | <img src="Doc/Images/wrong_output_predict2_2.png" width="150" /> |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
-| Caption for Image 1                                           | Caption for Image 2                                           | Caption for Image 3                                           |
+| Wrong prediction for digit 0                                  | Wrong prediction for digit 2                                  | Wrong prediction for digit 2                                       |
 
 | <img src="Doc/Images/wrong_output_predict5.png" width="150" /> | <img src="Doc/Images/wrong_output_predict5_2.png" width="150" /> |
 | ------------------------------------------------------------- | -------------------------------------------------------------- |
-| Caption for Image 4                                           | Caption for Image 5                                            |
+| Wrong prediction for digit 5                                  | Caption for Image 5                                            |
 
 
 
