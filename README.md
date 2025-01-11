@@ -45,6 +45,13 @@ After defining the network structure and training it on the MNIST dataset for 5 
    - Accuracy on the test data: 0.9801
 2. Inference Time:
    - 46.8072 milliseconds for 100 complete samples.
+  
+Finally, all the weights and parameters required for the hardware phase were stored in the following three files:
+- ‍`conv_weights.h`: Contains the weights of the convolutional layers.
+- `dense_weights.h`: Contains the weights of the fully connected layer.
+- `definitions.h`: Includes certain constants used in the hardware phase.
+‍‍‍‍‍سن
+
 
 ### Inference Phase
 
