@@ -181,7 +181,7 @@ In the final stage, a testbench file has been written for the design, which proc
 For example, our model recognizes 100 initial images from the MNIST test dataset with 100% accuracy.
 
 
-![restResult1](Doc/Images/Synthesis_Result_4.png "testbench resault1")
+![restResult4](Doc/Images/Synthesis_Result_4.png "testbench resault4")
 
 
 - **Inference phase performance**:
@@ -193,6 +193,10 @@ For example, our model recognizes 100 initial images from the MNIST test dataset
 - **Impact of increasing image count**:
   - As the number of images increases, network accuracy decreases.
   - Example: **500 images** processed with **99% accuracy**.
+
+
+![restResult5](Doc/Images/Synthesis_Result_5.png "testbench resault5")
+
 
 
 
