@@ -15,7 +15,7 @@ This repository contains the source files and scripts for implementing a Convolu
 Make sure you have the following tools installed on your system:
 
 - [Xilinx Vitis HLS](https://www.xilinx.com/products/design-tools/vitis.html)
-- A compatible Xilinx FPGA development board.
+- A compatible Xilinx FPGA development board. (I use [Digilent Zedboard](https://digilent.com/reference/programmable-logic/zedboard/start?srsltid=AfmBOopD31UhpS6JNzArP7-XzqL7dpQ8sG8Q0-w0Np0Z0SEVcadnrD-7))
 
 ### Clone the Repository
 
