@@ -195,6 +195,7 @@ For example, our model recognizes 100 initial images from the MNIST test dataset
   - Example: **500 images** processed with **99% accuracy**.
 
 
+
 ![restResult5](Doc/Images/Synthesis_Result_5.png "testbench resault5")
 
 
