@@ -14,7 +14,7 @@ This repository contains the source files and scripts for implementing a Convolu
 ### Training Phase
 In the first step, the target network is initially defined in software and trained using the `MNIST` dataset to utilize its weights in the hardware phase. For this purpose, a network with the following architecture is defined:
 
-![Diagram](Doc/Images/net_arch.png "network architecture")
+![netArch](Doc/Images/net_arch.png "network architecture")
 
 
 
