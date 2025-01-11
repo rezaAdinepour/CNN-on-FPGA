@@ -215,35 +215,18 @@ In this case, the network has incorrectly identified 5 images as follows:
 
 The values that the network has obtained for each wrong output are also provided below:
 
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 30%; padding: 10px;">
-    <ol>
-      <li>Row 1</li>
-      <li>Row 2</li>
-      <li>Row 3</li>
-      <li>Row 4</li>
-      <li>Row 5</li>
-    </ol>
-  </div>
-  <div style="width: 30%; padding: 10px;">
-    <ol>
-      <li>Row 6</li>
-      <li>Row 7</li>
-      <li>Row 8</li>
-      <li>Row 9</li>
-      <li>Row 10</li>
-    </ol>
-  </div>
-  <div style="width: 30%; padding: 10px;">
-    <ol>
-      <li>Row 11</li>
-      <li>Row 12</li>
-      <li>Row 13</li>
-      <li>Row 14</li>
-      <li>Row 15</li>
-    </ol>
-  </div>
-</div>
+| Prediction for (a) | Prediction for (b) | Prediction for (c) | Prediction for (d) | Prediction for (e) |
+| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+| Row 1              | Row 2              | Row 3              | Row 4              | Row 5              |
+| Row 6              | Row 7              | Row 8              | Row 9              | Row 10             |
+| Row 11             | Row 12             | Row 13             | Row 14             | Row 15             |
+| Row 16             | Row 17             | Row 18             | Row 19             | Row 20             |
+| Row 21             | Row 22             | Row 23             | Row 24             | Row 25             |
+| Row 26             | Row 27             | Row 28             | Row 29             | Row 30             |
+| Row 31             | Row 32             | Row 33             | Row 34             | Row 35             |
+| Row 36             | Row 37             | Row 38             | Row 39             | Row 40             |
+| Row 41             | Row 42             | Row 43             | Row 44             | Row 45             |
+| Row 46             | Row 47             | Row 48             | Row 49             | Row 50             |
 
 
 
