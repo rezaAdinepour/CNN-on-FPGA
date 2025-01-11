@@ -52,6 +52,13 @@ Finally, all the weights and parameters required for the hardware phase were sto
 - `definitions.h`: Includes certain constants used in the hardware phase.
 
 
+Additionally, all the `MNIST` test data, including the images and their corresponding labels, were saved in two files:
+
+- `in.dat`: Contains the input data.
+- `out.dat`: Contains the corresponding labels.
+
+This two file generated in `Codes/SW/gen_data.ipynb` file.
+
 
 ### Inference Phase
 
