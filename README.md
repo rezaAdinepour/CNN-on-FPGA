@@ -184,6 +184,17 @@ For example, our model recognizes 100 initial images from the MNIST test dataset
 ![restResult1](Doc/Images/Synthesis_Result_4.png "testbench resault1")
 
 
+- **Inference phase performance**:
+  - 100 images processed in **4.45 milliseconds**.
+
+- **Software phase performance**:
+  - Same 100 images processed in **46.80 milliseconds**.
+
+- **Impact of increasing image count**:
+  - As the number of images increases, network accuracy decreases.
+  - Example: **500 images** processed with **99% accuracy**.
+
+
 
 ## Getting Started
 
