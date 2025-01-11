@@ -36,6 +36,11 @@ The output of the network after compiling it:
 
 ![compileNet](Doc/Images/model_summary.png "model summary")
 
+After defining the network structure and training it on the MNIST dataset for 5 epochs, the following results were obtained:
+
+![lossAcc](Doc/Images/model_acc_loss.png "loss and accuracy")
+
+
 
 ### Inference Phase
 
