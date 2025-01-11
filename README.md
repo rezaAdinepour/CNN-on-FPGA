@@ -90,6 +90,88 @@ void dense(hls::stream<float> & flat_to_dense_stream, int filter, hls::stream<fl
 }
 ```
 
+
+In this design, the Convolutional Layer 4 has been utilized as follows:
+
+```C
+void convolutional_layer(
+	  float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS],
+	  hls::stream<float> conv_to_pool_streams [FILTERS] )
+{
+  convolution(pad_img0, 0, conv_to_pool_streams[0]);
+  convolution(pad_img1, 1, conv_to_pool_streams[1]);
+  convolution(pad_img2, 2, conv_to_pool_streams[2]);
+  convolution(pad_img3, 3, conv_to_pool_streams[3]);
+}
+```
+
+The output of the Convolutional Layers has been mapped to a Feature Map, which has then been flattened for further processing. The definition of this process is as follows:
+
+```C
+void flattening(hls::stream<float> &  pool_to_flat_stream, hls::stream<float> &  flat_to_dense_stream)
+{
+  flat_for_rows:
+  for(int r = 0; r < POOL_IMG_ROWS; ++r)
+  {
+    flat_for_cols:
+    for(int c = 0; c < POOL_IMG_COLS; ++c)
+    {
+      flat_to_dense_stream.write(pool_to_flat_stream.read());
+    }
+  }
+}
+```
+
+
+The final design of the model is referred to as the CNN. The definition of this model is as follows:
+
+```C
+void cnn(float img_in[IMG_ROWS][IMG_COLS], float prediction[DIGITS])
+{
+  /******** Pre-processing data. ********/
+
+  float pad_img0 [PAD_IMG_ROWS][PAD_IMG_COLS] = { 0 };
+  normalization_and_padding(img_in, pad_img0);
+
+  #if 0
+    #ifndef __SYNTHESIS__
+      printf("Padded image.\n");
+      print_pad_img(pad_img);
+    #endif
+  #endif
+
+  /* Allow parallelism cloning the padded image. */
+  float pad_img1 [PAD_IMG_ROWS][PAD_IMG_COLS];
+  float pad_img2 [PAD_IMG_ROWS][PAD_IMG_COLS];
+  float pad_img3 [PAD_IMG_ROWS][PAD_IMG_COLS];
+
+  float value;
+
+  clone_for_rows:
+  for(int i = 0; i < PAD_IMG_ROWS; ++i)
+    clone_for_cols:
+	for(int j = 0; j < PAD_IMG_COLS; ++j)
+    {
+      pad_img1[i][j] = pad_img0[i][j];
+      pad_img2[i][j] = pad_img0[i][j];
+      pad_img3[i][j] = pad_img0[i][j];
+    }
+
+  /* Parallel executions start here. */
+  dataflow_section(pad_img0, pad_img1, pad_img2, pad_img3, prediction);
+}
+```
+
+
+## Result
+In the final stage, we synthesize the CNN model. The network synthesis reports are provided as follows:
+
+
+
+
 ## Getting Started
 
 ### Prerequisites
