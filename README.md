@@ -50,7 +50,7 @@ Finally, all the weights and parameters required for the hardware phase were sto
 - ‍`conv_weights.h`: Contains the weights of the convolutional layers.
 - `dense_weights.h`: Contains the weights of the fully connected layer.
 - `definitions.h`: Includes certain constants used in the hardware phase.
-‍‍‍‍‍سن
+
 
 
 ### Inference Phase
