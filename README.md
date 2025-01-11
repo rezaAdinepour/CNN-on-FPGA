@@ -61,8 +61,34 @@ This two file generated in `Codes/SW/gen_data.ipynb` file.
 
 
 ### Inference Phase
+In this phase, it is necessary to write the code for the Convolutional layer and Fully Connected layer and other important modules. The same structure presented in the software phase will be implemented in the hardware phase.
 
+The hardware implementation is carried out here, while the structure defined in the software phase is maintained. The code for the Fully Connected layer is provided as follows:
 
+```C
+void dense(hls::stream<float> & flat_to_dense_stream, int filter, hls::stream<float> & dense_to_softmax_stream)
+{
+  float flat_value;
+  float dense_array[DENSE_SIZE] = { 0 };
+
+  dense_for_flat:
+  for (int i = 0; i < FLAT_SIZE / FILTERS; ++i)
+  {
+    flat_value = flat_to_dense_stream.read();
+
+    for (int d = 0; d < DENSE_SIZE; ++d)
+    {
+      int index = filter * (FLAT_SIZE / FILTERS) + i;
+        dense_array[d] += dense_weights[index][d] * flat_value;
+    }
+  }
+
+  for (int j = 0; j < DENSE_SIZE; ++j)
+  {
+    dense_to_softmax_stream.write(dense_array[j]);
+  }
+}
+```
 
 ## Getting Started
 
