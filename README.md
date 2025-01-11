@@ -316,6 +316,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 
 ## Contact
-For any questions or further information, contact [r3zaadinep0ur@gmail.com].
+For any questions or further information, contact [r3zaadinep0ur@gmail.com](mailto:r3zaadinep0ur@gmail.com).
 
 
