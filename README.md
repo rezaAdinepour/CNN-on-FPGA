@@ -32,6 +32,10 @@ def define_model() -> Sequential:
    return model
 ```
 
+The output of the network after compiling it:
+
+![compileNet](Doc/Images/model_summary.png "model summary")
+
 
 ### Inference Phase
 
