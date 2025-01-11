@@ -202,11 +202,11 @@ For example, our model recognizes 100 initial images from the MNIST test dataset
 In this case, the network has incorrectly identified 5 images as follows:
 
 
-| ![Image 1](Doc/Images/wrong_output_predict0.png) | ![Image 2](Doc/Images/wrong_output_predict2.png) | ![Image 3](Doc/Images/wrong_output_predict2_2.png) |
+| ![Image 1](Doc/Images/wrong_output_predict0.png){:style="width: 100px;"} | ![Image 2](Doc/Images/wrong_output_predict2.png){:style="width: 100px;"} | ![Image 3](Doc/Images/wrong_output_predict2_2.png){:style="width: 100px;"} |
 | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
 | Caption for Image 1                              | Caption for Image 2                              | Caption for Image 3                              |
 
-| ![Image 4](Doc/Images/wrong_output_predict5.png)  | ![Image 5](Doc/Images/wrong_output_predict5_2.png)  |
+| ![Image 4](Doc/Images/wrong_output_predict5.png){:style="width: 100px;"}  | ![Image 5](Doc/Images/wrong_output_predict5_2.png){:style="width: 100px;"}  |
 | ------------------------------------------------ | ------------------------------------------------- |
 | Caption for Image 4                              | Caption for Image 5                               |
 
